@@ -1,64 +1,101 @@
 /* Grid */
 .case
-  position: relative
-  width: (1140px + 30px)
-  padding-left: 15px
-  padding-right: 15px
-  margin: 0 auto
+	position: relative
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
 
 .col, .row
-  display: flex
-  flex-wrap: wrap
+	display: flex
+	flex-wrap: wrap
+
+.col
+	padding-left: 15px
+	padding-right: 15px
 
 .row
-  flex-direction: row
-  &-r
-    flex-direction: row-reverse
+	flex-direction: row
+	&-r
+		flex-direction: row-reverse
+	&-
+		margin-left: -15px
+		margin-right: -15px
 .col
-  flex-direction: column
-  &-r
-    flex-direction: column-reverse
+	flex-direction: column
+	&-r
+		flex-direction: column-reverse
 
 .row, .col
-  &.left
-    justify-content: flex-start
+	&.left
+		justify-content: flex-start
 
-  &.right
-    justify-content: flex-end
+	&.right
+		justify-content: flex-end
 
-  &.mid
-    justify-content: center
+	&.mid
+		justify-content: center
 
-  &.between
-    justify-content: space-between
+	&.between
+		justify-content: space-between
 
-  &.around
-    justify-content: space-around
+	&.around
+		justify-content: space-around
 
 
 .i
-  &-top
-    align-items: flex-start
-  &-bottom
-    align-items: flex-end
-  &-mid
-    align-items: center
-  &-baseline
-    align-items: baseline
-  &-strech
-    align-items: stretch
+	&-top
+		align-items: flex-start
+	&-bottom
+		align-items: flex-end
+	&-mid
+		align-items: center
+	&-baseline
+		align-items: baseline
+	&-strech
+		align-items: stretch
 
 .one
-  order: 1
+	order: 1
 .two
-  order: 2
+	order: 2
 .tree
-  order: 3
+	order: 3
 .four
-  order: 4
+	order: 4
 .five
-  order: 5
+	order: 5
 .six
-  order: 6
+	order: 6
 .seven
-  order: 7
+	order: 7
+
+
+@mixin grid($gridCols, $beforeCountText)
+	$i: 1
+	@while $i < $gridCols + 1
+		.col-#{$beforeCountText}-#{$i}
+			width: 100% / $gridCols * $i
+			$i: $i + 1
+
+@media screen and (min-width: 1200px)
+	.case
+		width: (1140px + 30px)
+	@include grid(12, "lg")
+
+
+@media screen and (max-width: 1199px)
+	.case
+		width: 950px
+	@include grid(12, "md")
+
+
+@media screen and (max-width: 992px)
+	.case
+		width: 750px
+	@include grid(12, "sm")
+
+
+@media screen and (max-width: 767px)
+	.case
+		width: 100%
+	@include grid(12, "xs")
