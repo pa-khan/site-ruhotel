@@ -148,7 +148,7 @@
       -ms-flex-order: 7;
           order: 7; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 122px) {
   .case {
     width: 1200px; }
   .col-lg-1 {
@@ -176,7 +176,7 @@
   .col-lg-12 {
     width: 100%; } }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1225px) {
   .case {
     width: 950px; }
   .col-md-1 {
@@ -230,7 +230,9 @@
   .col-sm-11 {
     width: 91.66667%; }
   .col-sm-12 {
-    width: 100%; } }
+    width: 100%; }
+  .sm-hidden {
+    display: none; } }
 
 @media screen and (max-width: 767px) {
   .case {
@@ -258,4 +260,6 @@
   .col-xs-11 {
     width: 91.66667%; }
   .col-xs-12 {
-    width: 100%; } }
+    width: 100%; }
+  .xs-hidden {
+    display: none; } }

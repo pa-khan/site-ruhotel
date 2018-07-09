@@ -598,7 +598,7 @@
       -ms-flex-order: 7;
           order: 7; }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 122px) {
   .case {
     width: 1200px; }
   .col-lg-1 {
@@ -626,7 +626,7 @@
   .col-lg-12 {
     width: 100%; } }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1225px) {
   .case {
     width: 950px; }
   .col-md-1 {
@@ -680,7 +680,9 @@
   .col-sm-11 {
     width: 91.66667%; }
   .col-sm-12 {
-    width: 100%; } }
+    width: 100%; }
+  .sm-hidden {
+    display: none; } }
 
 @media screen and (max-width: 767px) {
   .case {
@@ -708,7 +710,9 @@
   .col-xs-11 {
     width: 91.66667%; }
   .col-xs-12 {
-    width: 100%; } }
+    width: 100%; }
+  .xs-hidden {
+    display: none; } }
 
 /* Global settings */
 *, :before, :after {
@@ -911,6 +915,9 @@ img {
     color: #d1d1d1; }
   .btn_hover-color-black:hover {
     color: #000000; }
+  .btn_radius-reset {
+    -webkit-border-radius: 5px;
+            border-radius: 5px; }
 
 .input input, .textarea textarea {
   -webkit-transition: .3s;
@@ -1011,6 +1018,9 @@ img {
     width: 55px;
     height: 38px;
     background: url("../../img/bg/santa-cap.png") no-repeat center; }
+
+.mobile-nav {
+  display: none; }
 
 .filter_shadow .filter__wrap {
   -webkit-box-shadow: -6px 9px 32px rgba(86, 36, 97, 0.11);
@@ -1157,7 +1167,8 @@ img {
   padding: 5px 10px;
   cursor: pointer;
   -webkit-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  font-size: 12px; }
 
 .ui-widget {
   font-size: 15px;
@@ -1339,7 +1350,6 @@ img {
 
 .link {
   font-size: 15px;
-  font-weight: 600;
   text-align: center; }
   .link a {
     color: #414141;
@@ -1523,13 +1533,22 @@ img {
             transform: translate(-50%, -50%) scale(1); }
 
 .page_triangles-color {
-  background: url("../../img/bg/triangles-color.png") no-repeat center top; }
+  background: url("../../img/bg/triangles-color.png") no-repeat center top;
+  background-size: 100% auto; }
 
 .page_triangles-gray {
-  background: url("../../img/bg/triangles-gray.png") no-repeat center top; }
+  background: url("../../img/bg/triangles-gray.png") no-repeat center top, #f0eeee;
+  background-size: 100% auto; }
+
+.page_gray {
+  background-color: #f0eeee; }
 
 .page_hotel {
   padding-top: 25px; }
+
+.page_sub {
+  padding-top: 45px;
+  padding-bottom: 45px; }
 
 .page__main-title {
   margin-bottom: 30px; }
@@ -1541,10 +1560,12 @@ img {
 
 .page__wrap {
   background-color: #fff;
-  margin-bottom: 35px; }
+  margin-bottom: 0; }
   .page__wrap- {
     margin-left: -15px;
     margin-right: -15px; }
+  .page__wrap_bg-none {
+    background: none; }
 
 .hotel__filter {
   padding: 24px 30px 18px;
@@ -1693,6 +1714,24 @@ img {
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 65px; }
+  .plans_page {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 30px; }
+  .plans_foot {
+    border: none;
+    background: url("../../img/bg/house.png") no-repeat center top;
+    background-size: cover;
+    padding-top: 42px;
+    padding-bottom: 25px; }
+    .plans_foot .plans__title {
+      font-weight: 700;
+      margin-bottom: 45px; }
+    .plans_foot .plans__case {
+      border-top: none;
+      border-bottom: none; }
+    .plans_foot .plans__item {
+      margin-bottom: 7px; }
   .plans__title {
     margin-bottom: 24px; }
   .plans__nav {
@@ -1728,6 +1767,9 @@ img {
     font-size: 18px;
     text-align: center;
     margin-bottom: 35px; }
+    .plans__subtitle_bold {
+      font-weight: 900;
+      margin-bottom: 30px; }
   .plans__images {
     position: relative;
     margin-bottom: 20px; }
@@ -1957,7 +1999,23 @@ img {
 .services {
   padding-top: 54px;
   padding-bottom: 45px;
-  background: url("../../img/bg/house.png") no-repeat center top; }
+  background: url("../../img/bg/house.png") no-repeat center top;
+  background-size: cover; }
+  .services_foot {
+    padding-top: 45px;
+    padding-bottom: 30px;
+    background-size: cover; }
+    .services_foot .services__title {
+      margin-bottom: 38px;
+      font-weight: 700; }
+    .services_foot .services__list {
+      margin-bottom: 25px; }
+  .services_bg {
+    background: #f0eeee;
+    padding-top: 0; }
+    .services_bg .services__title {
+      color: #000;
+      padding-top: 0; }
   .services__title {
     margin-bottom: 21px; }
   .services__nav {
@@ -1975,6 +2033,10 @@ img {
         font-weight: 700; }
     .services__nav a {
       color: #fff; }
+    .services__nav_page {
+      margin-bottom: 32px; }
+      .services__nav_page a {
+        color: #000000; }
   .services__list {
     margin-bottom: 45px; }
   .services__case {
@@ -2083,31 +2145,34 @@ img {
       width: 16px;
       height: 26px; }
 
-.text-page {
-  margin-bottom: 65px; }
-  .text-page__wrap {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 975px; }
-  .text-page__title {
-    text-align: center;
-    margin-bottom: 32px; }
-    .text-page__title:after {
-      display: block;
-      content: '';
-      height: 2px;
-      width: 108px;
-      background-color: #43cb83;
-      margin: auto;
-      margin-top: 28px; }
-  .text-page__wrap {
-    padding: 50px 48px 62px; }
-  .text-page__img {
-    margin-bottom: 48px; }
-  .text-page__desc {
-    font-size: 24px;
-    padding-left: 18px;
-    margin-bottom: 32px; }
+.text-page__wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 975px;
+  background-color: #fff; }
+
+.text-page__title {
+  text-align: center;
+  margin-bottom: 32px; }
+  .text-page__title:after {
+    display: block;
+    content: '';
+    height: 2px;
+    width: 108px;
+    background-color: #43cb83;
+    margin: auto;
+    margin-top: 28px; }
+
+.text-page__wrap {
+  padding: 50px 48px 62px; }
+
+.text-page__img {
+  margin-bottom: 48px; }
+
+.text-page__desc {
+  font-size: 24px;
+  padding-left: 18px;
+  margin-bottom: 32px; }
 
 .footer {
   color: #8da0ac;
@@ -2221,3 +2286,32 @@ table {
       background-color: #43cb83; }
     .ui-selectmenu-menu li:last-of-type {
       border-bottom: none; }
+
+.pagination {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px; }
+  .pagination ul {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .pagination li {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px; }
+    .pagination li.selected a, .pagination li:hover a {
+      color: #43cb83;
+      font-weight: 700; }
+  .pagination a {
+    color: #696969; }
+
+.news-item {
+  background-color: #fff; }
+  .news-item__main-img {
+    margin-bottom: 45px; }
+
+.news-list {
+  padding-left: 30px; }
+  .news-list__title {
+    margin-bottom: 35px; }

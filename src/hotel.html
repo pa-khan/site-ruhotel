@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+<div class="mobile-nav">
+	<ul class="nav nav_line">
+		<li><a href="">О компании</a></li>
+		<li><a href="">Акции</a></li>
+		<li><a href="">Каталог</a></li>
+		<li><a href="">Контакты</a></li>
+	</ul>
+</div>
+<header class="header header_ny">
+	<div class="header__container">
+		<div class="case">
+			<div class="header__wrap row row-">
+				<div class="header__logo logo logo_ny col col-lg-3 col-md-3">
+					<a href=""><img src="upload/logos/logo-color.png" alt=""></a>
+				</div>
+				<div class="header__nav col col-lg-6 col-md-6 sm-hidden xs-hidden">
+					<ul class="nav nav_line">
+						<li><a href="">О компании</a></li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__contacts col col-lg-3 col-md-3 sm-hidden xs-hidden">
+					<div class="header__phone"><a href="tel:+55555555555" class="phone"><strong>+5 </strong>|555|<strong> 555 55 55 </strong></a></div>
+					<div class="header__callback"><a data-fancybox data-src="#popup-callback" href="javascript:;">Обратный звонок</a></div>
+				</div>
+				<div class="header__mobile-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main class="main">
+	<div class="photos row">
+		<a href="upload/photos/1.png" class="photos__item" style="background-image: url('upload/photos/1.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/2.png" class="photos__item" style="background-image: url('upload/photos/2.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/3.png" class="photos__item" style="background-image: url('upload/photos/3.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/4.png" class="photos__item" style="background-image: url('upload/photos/4.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/5.png" class="photos__item" style="background-image: url('upload/photos/5.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/6.png" class="photos__item" style="background-image: url('upload/photos/6.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/1.png" class="photos__item" style="background-image: url('upload/photos/1.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/2.png" class="photos__item" style="background-image: url('upload/photos/2.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/3.png" class="photos__item" style="background-image: url('upload/photos/3.png');" data-fancybox="photos"></a>
+		<a href="upload/photos/4.png" class="photos__item" style="background-image: url('upload/photos/4.png');" data-fancybox="photos"></a>
+	</div>
+	<div class="page page_triangles-color page_hotel">
+		<div class="case">
+			<div class="page__wrap page__wrap-">
+				<div class="hotel">
+					<div class="hotel__filter row">
+						<div class="hotel__filter-item hotel__filter-item_names">
+							<div class="hotel__filter-title">Имя и Фамилия</div>
+							<div class="hotel__filter-input input input_200 input_border input_small"><input type="text" placeholder="Евпаторий Эвлампович"></div>
+						</div>
+						<div class="hotel__filter-item hotel__filter-item_email">
+							<div class="hotel__filter-title">E-mail</div>
+							<div class="hotel__filter-input input input_175 input_border input_small"><input type="text" placeholder="evpaoriy@gmail.com"></div>
+						</div>
+						<div class="hotel__filter-item hotel__filter-item_phone">
+							<div class="hotel__filter-title">Телефон</div>
+							<div class="hotel__filter-input input input_165 input_border input_small input_phone"><input type="text" placeholder="+1 |234| 567 89 01"></div>
+						</div>
+						<div class="hotel__filter-item hotel__filter-item_category">
+							<div class="hotel__filter-title">Категория</div>
+							<div class="hotel__filter-select select select_border select_small">
+								<select name="" id="">
+									<option value="0">Категория</option>
+									<option value="1">Название категории</option>
+									<option value="2">Еще название категории</option>
+								</select>
+							</div>
+						</div>
+						<div class="hotel__filter-item hotel__filter-item_guests">
+							<div class="hotel__filter-title hotel__filter-title_small">Гости</div>
+							<div class="hotel__filter-select select select_border select_small">
+								<select name="" id="">
+									<option value="0">1</option>
+									<option value="1">2</option>
+									<option value="2">3</option>
+								</select>
+							</div>
+						</div>
+						<div class="hotel__filter-item hotel__filter-item_dates">
+							<div class="hotel__filter-title">Даты</div>
+							<div class="hotel__filter-date input_small input_border input input_15 date"><input type="text" placeholder="05.06.2018"></div>
+							<div class="hotel__filter-text">:</div>
+							<div class="hotel__filter-date input_small input_border input input_15 date"><input type="text" placeholder="05.06.2018"></div>
+						</div>
+					</div>
+					<div class="hotel__main-img" style="background-image: url('upload/hotel.png');"></div>
+					<div class="hotel__content row">
+						<div class="hotel__content-left">
+							<div class="hotel__main-title main-title"><span>Яхонты Таруса</span><div class="hotel__label label">Есть номера</div></div>
+							<div class="hotel__desc desc">Добро пожаловать в дом отдыха “Яхонты Таруса”</div>
+							<div class="hotel__text text nano">
+								<div class="nano-content">
+									<p>Отель Яхонты Заповедник Таруса, расположен в 100 км от Москвы, в Калужской области, в деревне Грибовка. Всего 2 часа езды по Симферопольскому шоссе и вы в отеле Яхонты Таруса. Заповедный лес и тишина создает необыкновенное ощущение единения с природой. <br>Курорт Яхонты Таруса — полноценный семейный отдых в Подмосковье.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>Отель Яхонты Заповедник Таруса, расположен в 100 км от Москвы, в Калужской области, в деревне Грибовка. Всего 2 часа езды по Симферопольскому шоссе и вы в отеле Яхонты Таруса. Заповедный лес и тишина создает необыкновенное ощущение единения с природой. <br>Курорт Яхонты Таруса — полноценный семейный отдых в Подмосковье.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>Отель Яхонты Заповедник Таруса, расположен в 100 км от Москвы, в Калужской области, в деревне Грибовка. Всего 2 часа езды по Симферопольскому шоссе и вы в отеле Яхонты Таруса. Заповедный лес и тишина создает необыкновенное ощущение единения с природой. <br>Курорт Яхонты Таруса — полноценный семейный отдых в Подмосковье.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+									<p>ОТЕЛЬ ЯХОНТЫ, ЗАПОВЕДНИК ТАРУСА: ПОЛНОЦЕННЫЙ ОТДЫХ<br>Выходные, праздничные дни или отпуск на сегодняшний день можно провести в тишине леса. Пение птиц, море зелени, кристально чистый воздух летом, глубокие сугробы и интересные развлечения зимой – это и есть  отель Яхонты, заповедник Таруса. Мы предлагаем Вам в любое время года провести отпуск в уютных комфортабельных номерах, принять оздоровительные процедуры и насладиться природой.</p>
+								</div>
+							</div>
+						</div>
+						<div class="hotel__content-right">
+							<div class="hotel__news">
+								<div class="hotel__news-title subtitle">Новости</div>
+								<div class="hotel__news-list news">
+									<a href="" class="news__item row">
+										<div class="news__img"><img src="upload/news/1.png" alt=""></div>
+										<div class="news__content">
+											<div class="news__title">Природная радонотерапия</div>
+											<div class="news__text">Ниже слоя аэрации, мощность которого от 2 до 50 м, залегает первый...</div>
+										</div>
+									</a>
+									<a href="" class="news__item row">
+										<div class="news__img"><img src="upload/news/2.png" alt=""></div>
+										<div class="news__content">
+											<div class="news__title">Здоровье, молодость и красота на кленовой алее</div>
+											<div class="news__text">Ниже слоя аэрации, мощност которо...</div>
+										</div>
+									</a>
+									<a href="" class="news__item row">
+										<div class="news__img"><img src="upload/news/3.png" alt=""></div>
+										<div class="news__content">
+											<div class="news__title">Программа «Укрепи Иммунитет»</div>
+											<div class="news__text">Ниже слоя аэрации, мощность которого от 2 до 50 м, залегает первый...</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hotel__plans plans">
+						<div class="plans__title subtitle subtitle_mid">Проживание</div>
+						<div class="plans__nav">
+							<ul>
+								<li class="selected"><a href="">Все</a></li>
+								<li><a href="">Стандарт</a></li>
+								<li><a href="">Супериор</a></li>
+								<li><a href="">Семейный двухкомнатный</a></li>
+								<li><a href="">Трехкомнатные аппартаменты</a></li>
+								<li><a href="">Люксы</a></li>
+								<li><a href="">Коттедж с сауной</a></li>
+							</ul>
+						</div>
+						<div class="plans__list row row-">
+							<div class="plans__item col col-lg-6 col-md-6 col-sm-12">
+								<div class="plans__case">
+									<div class="plans__subtitle">Люкс Жасмин</div>
+									<div class="plans__images row between">
+										<div class="plans__label plans__label_true">Есть номера</div>
+										<div class="plans__img">
+											<div class="plans__img-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__img-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__img-item" style="background-image: url(upload/type/1.png);"></div>
+										</div>
+										<div class="plans__imgs">
+											<div class="plans__imgs-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__imgs-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__imgs-item" style="background-image: url(upload/type/1.png);"></div>
+										</div>
+									</div>
+									<div class="plans__text">
+										<p>Площадь 15 — 20 кв.м. Максимально в номере — 3 человека. В каждом номере есть балкон. Виды из окон на лес, ресторан, СПА и площадь с фонтаном. Расположены в 1,2,3,4,5,6,7 жилых корпусах. Количество номеров: 70</p>
+										<p><strong>В номере</strong> Двуспальная кровать, 2 кресла, журнальный столик, пуф, телефизор, кондиционер, чайный набор, мини-бар, телефон, WiFi</p>
+										<p><strong>В коридоре</strong> Шкаф-купэ, вешалка-багажница</p>
+										<p><strong>В ванной комнате</strong> Ванная гидромассажная, душевая кабина, гигиенический душ, банные принадлежности, халаты и тапочки, фен</p>
+									</div>
+									<a href="" class="plans__btn btn btn_bg-yellow btn_small btn_radius btn_hover-bg-green btn_hover-color-white">Бронировать</a>
+								</div>
+							</div>
+							<div class="plans__item col col-lg-6 col-md-6 col-sm-12">
+								<div class="plans__case">
+									<div class="plans__subtitle">Люкс Жасмин</div>
+									<div class="plans__images row between">
+										<div class="plans__label plans__label_false">Занято</div>
+										<div class="plans__img">
+											<div class="plans__img-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__img-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__img-item" style="background-image: url(upload/type/1.png);"></div>
+										</div>
+										<div class="plans__imgs">
+											<div class="plans__imgs-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__imgs-item" style="background-image: url(upload/type/1.png);"></div>
+											<div class="plans__imgs-item" style="background-image: url(upload/type/1.png);"></div>
+										</div>
+									</div>
+									<div class="plans__text">
+										<p>Площадь 15 — 20 кв.м. Максимально в номере — 3 человека. В каждом номере есть балкон. Виды из окон на лес, ресторан, СПА и площадь с фонтаном. Расположены в 1,2,3,4,5,6,7 жилых корпусах. Количество номеров: 70</p>
+										<p><strong>В номере</strong> Двуспальная кровать, 2 кресла, журнальный столик, пуф, телефизор, кондиционер, чайный набор, мини-бар, телефон, WiFi</p>
+										<p><strong>В коридоре</strong> Шкаф-купэ, вешалка-багажница</p>
+										<p><strong>В ванной комнате</strong> Ванная гидромассажная, душевая кабина, гигиенический душ, банные принадлежности, халаты и тапочки, фен</p>
+									</div>
+									<a href="" class="plans__btn btn btn_bg-yellow btn_small btn_radius btn_hover-bg-green btn_hover-color-white">Бронировать</a>
+								</div>
+							</div>
+						</div>
+						<div class="plans__link link"><a href="">Посмотреть все</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="services">
+		<div class="case">
+			<div class="services__wrap">
+				<div class="services__title subtitle subtitle_mid subtitle_white">Услуги</div>
+				<div class="services__nav">
+					<ul>
+						<li class="selected"><a href="">Бассеины</a></li>
+						<li><a href="">Сауны</a></li>
+						<li><a href="">Рестораны</a></li>
+						<li><a href="">Детский клуб</a></li>
+						<li><a href="">Библиотека</a></li>
+					</ul>
+				</div>
+				<div class="services__list row row-">
+					<div class="services__item col col-lg-4 col-md-4 col-sm-12">
+						<div class="services__case">
+							<div class="services__img"><img src="upload/services/1.png" alt=""></div>
+							<div class="services__content">
+								<div class="services__subtitle"><a href="">БАССЕЙН ЯХОНТЫ ТАРУСА</a></div>
+								<div class="services__text">
+									<p>В отеле Яхонты Таруса к Вашим услугам панорамный Аквацентр площадью 300 кв.м. — взрослый и детский бассейны, раздельная финская сауна и аквабар с вкуснейшими напитками.</p>
+									<p>Для комфортного пребывания в Аквацентре производится постоянный контроль над температурой воды и воздуха.</p>
+								</div>
+								<div class="services__btns row between">
+									<a href="" class="hotels__btn btn btn_border-green btn_color-green btn_small btn_hover-color-white btn_hover-bg-green">Бронировать</a>
+									<a href="" class="hotels__btn btn btn_border-gray btn_color-gray btn_small btn_hover-bg-green btn_hover-color-white"><i class="icon icon-dots-gray"></i>Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__item col col-lg-4 col-md-4 col-sm-12">
+						<div class="services__case">
+							<div class="services__label">Скидка <strong>20%</strong></div>
+							<div class="services__img"><img src="upload/services/1.png" alt=""></div>
+							<div class="services__content">
+								<div class="services__subtitle"><a href="">БАССЕЙН ЯХОНТЫ ТАРУСА</a></div>
+								<div class="services__text">
+									<p>В отеле Яхонты Таруса к Вашим услугам панорамный Аквацентр площадью 300 кв.м. — взрослый и детский бассейны, раздельная финская сауна и аквабар с вкуснейшими напитками.</p>
+									<p>Для комфортного пребывания в Аквацентре производится постоянный контроль над температурой воды и воздуха.</p>
+								</div>
+								<div class="services__btns row between">
+									<a href="" class="hotels__btn btn btn_border-green btn_color-green btn_small btn_hover-color-white btn_hover-bg-green">Бронировать</a>
+									<a href="" class="hotels__btn btn btn_border-gray btn_color-gray btn_small btn_hover-bg-green btn_hover-color-white"><i class="icon icon-dots-gray"></i>Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="services__item col col-lg-4 col-md-4 col-sm-12">
+						<div class="services__case">
+							<div class="services__img"><img src="upload/services/1.png" alt=""></div>
+							<div class="services__content">
+								<div class="services__subtitle"><a href="">БАССЕЙН ЯХОНТЫ ТАРУСА</a></div>
+								<div class="services__text">
+									<p>В отеле Яхонты Таруса к Вашим услугам панорамный Аквацентр площадью 300 кв.м. — взрослый и детский бассейны, раздельная финская сауна и аквабар с вкуснейшими напитками.</p>
+									<p>Для комфортного пребывания в Аквацентре производится постоянный контроль над температурой воды и воздуха.</p>
+								</div>
+								<div class="services__btns row between">
+									<a href="" class="hotels__btn btn btn_border-green btn_color-green btn_small btn_hover-color-white btn_hover-bg-green">Бронировать</a>
+									<a href="" class="hotels__btn btn btn_border-gray btn_color-gray btn_small btn_hover-bg-green btn_hover-color-white"><i class="icon icon-dots-gray"></i>Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services__link link link_white"><a href="">Посмотреть все услуги</a></div>
+			</div>
+		</div>
+	</div>
+	<div class="prices">
+		<div class="case">
+			<div class="prices__wrap">
+				<div class="prices__title subtitle subtitle_mid">Цены</div>
+				<div class="prices__links">
+					<ul>
+						<li><a href="#prices__tab-1">Цены на путевки</a></li>
+						<li><a href="#prices__tab-2">Июньские праздники 2018</a></li>
+						<li><a href="#prices__tab-3">Все выходные 2018</a></li>
+					</ul>
+				</div>
+				<div class="prices__tabs">
+					<div class="prices__tab" id="prices__tab-1"></div>
+					<div class="prices__tab" id="prices__tab-2"></div>
+					<div class="prices__tab" id="prices__tab-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hotel-map">
+		<div class="hotel-map__wrap">
+			<div class="hotel-map__title">249180, Калужская область, Д. Грибовка</div>
+			<div class="hotel-map__content">
+				<p>Проезд общественным транспортом:</p>
+				<p>Электричкой с Киевского вокзала или автобусом от м. Тёплый Стан до г. Обнинск, затем автобусом, следующим по направлению на Серпухов или Кременки до остановки «Сосновый бор»</p>
+			</div>
+			<div class="hotel-map__phones">
+				<p><a href="tel:+74955052583" class="phone"><strong>8 </strong>|495|<strong> 505 25 83</strong></a></p>
+				<p><a href="tel:+74956652165" class="phone"><strong>8 </strong>|495|<strong> 665 21 65</strong></a></p>
+			</div>
+		</div>
+		<div class="hotel-map__map">
+			<div id="hotel-map"></div>
+			<script>
+				var map;
+				var iconMarker = 'upload/marker-large.png';
+	      function initMap() {
+	        map = new google.maps.Map(document.getElementById('hotel-map'), {
+	          zoom: 13,
+	          center: new google.maps.LatLng(51.3045939,20.3428488),
+	          mapTypeId: 'terrain',
+	          disableDefaultUI: true,
+	          styles: [
+						  {
+						    "featureType": "administrative",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#94ecf1"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "landscape",
+						    "stylers": [
+						      {
+						        "color": "#ffffff"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "poi",
+						    "stylers": [
+						      {
+						        "visibility": "off"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "water",
+						    "elementType": "geometry.fill",
+						    "stylers": [
+						      {
+						        "color": "#d4fafa"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "water",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#94ecf1"
+						      }
+						    ]
+						  }
+						]
+	        });
+
+	        // Create a <script> tag and set the USGS URL as the source.
+	        var script = document.createElement('script');
+	        // This example uses a local copy of the GeoJSON stored at
+	        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+	        script.src = 'template/scripts/geo.js';
+	        document.getElementsByTagName('head')[0].appendChild(script);
+	      }
+
+	      // Loop through the results array and place a marker for each
+	      // set of coordinates.
+	      window.eqfeed_callback = function(results) {
+	        for (var i = 0; i < results.features.length; i++) {
+	          var coords = results.features[i].geometry.coordinates;
+	          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+	          var marker = new google.maps.Marker({
+	            position: latLng,
+	            map: map
+	          });
+	        }
+	      }
+
+
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfEFyS5xoi-MBgcRXgqXMSDSwCppIb7HY&callback=initMap" async defer></script>
+		</div>
+	</div>
+</main>
+
+<footer class="footer">	
+	<div class="case">
+		<div class="footer__wrap row row- i-mid">
+			<div class="footer__logo col col-lg-2 col-md-2 sm-hidden xs-hidden">
+				<a href=""><img src="upload/logos/logo-blue-gray.png" alt=""></a>
+			</div>
+			<div class="footer__nav col col-lg-7 col-md-7 col-sm-9 col-xs-12">
+				<ul class="nav nav_foot">
+					<li><a href="">О компании</a></li>
+					<li><a href="">Отэли на карте</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__btn-wrap col col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<a href="" class="footer__btn btn btn_border-blue-gray btn_color-blue-gray"><i class="icon icon-marker-normal-blue-gray"></i>Отэли на карте</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="popup popup_callback" id="popup-callback">
+	<div class="popup__subtitle subtitle subtitle_mid">Обратный звонок</div>
+	<div class="popup__wrap">
+		<div class="popup__input input input_border input_normal input_center"><input placeholder="Имя" type="text"></div>
+		<div class="popup__input input input_border input_normal input_center input_phone"><input placeholder="Телефон" type="text"></div>
+		<button class="popup__btn btn btn_bg-green btn_color-white btn_small btn_radius btn_hover-bg-yellow btn_hover-color-black">Заказать звонок</button>
+	</div>
+</div>
+</body>
+</html>

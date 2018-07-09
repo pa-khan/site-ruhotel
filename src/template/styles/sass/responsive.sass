@@ -1,13 +1,696 @@
-@media screen and (max-width: 1199px)
-	.case
-		width: 950px
+@media screen and (max-width: 1225px)
+	.nav
+		width: 430px
+		justify-content: center
+		li
+			margin-right: 15px
+			margin-left: 15px
+			&:after
+				right: -15px
+		&_foot
+			width: 100%
+			li
+				&:first-of-type
+					margin-left: 0
+				&:last-of-type
+					margin-right: 0
 
+	.filter
+		padding-top: 0
+		padding-bottom: 0
+		&__wrap
+			padding: 15px
+		&__item
+			width: 100%
+			text-align: left
+			padding-left: 0
+			padding-right: 0
+			margin-bottom: 5px
+			&:after
+				display: none
+			&:last-of-type
+				margin-bottom: 0
+			
+		&__item, &__subitem
+			justify-content: flex-start
+			
+	.main-slide
+		padding-top: 30px
+		padding-bottom: 30px
+	.main-shares
+		&__list
+			padding-right: 0
+	
+	.hotels
+		&__filter
+			margin-bottom: 0
+			
+		&__img
+			img
+				margin-left: auto
+				margin-right: auto
 
+		&__case
+			padding: 15px
+		&__desc
+			margin-bottom: 10px
+			
+		&__btn
+			width: 100%
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+
+	.main-articles
+		padding-top: 25px
+		&__title
+			margin-bottom: 25px
+		&__name
+			font-size: 18px
+			margin-bottom: 5px
+
+		&__link
+			margin-top: 15px
+
+	.main-foot
+		margin-top: 40px
+			
+	.reviews
+		&__list
+			padding-left: 100px
+			padding-right: 100px
+			
+		&__item
+
+	.callback
+		&_main-foot
+			margin-left: 0
+
+	.main-foot
+		padding-bottom: 30px
+		&__reviews
+			padding-top: 0
+
+	.photos
+		&__item
+			width: 25%
+			&:nth-last-of-type(1), &:nth-last-of-type(2)
+				display: none
+
+	.hotel
+		&__filter
+			padding: 30px 30px 20px
+			&-item
+				margin-right: 25px
+				margin-bottom: 15px
+			&-input
+				&.input_200, &.input_175, &.input_165
+					width: 300px
+
+		&__content
+			padding: 15px 15px 0
+			&-left, &-right
+				width: 100%
+				padding: 0
+
+		&__text
+			height: auto
+			.nano-content
+				position: relative
+				height: auto
+				padding-right: 0
+				overflow: visible
+			.nano-pane
+				display: none
+
+		&__news
+			padding-left: 0
+			padding-right: 0
+			&-title
+				padding-top: 35px
+				margin-bottom: 20px
+			
+			
+	.plans
+		padding-top: 30px
+		padding-bottom: 35px
+		&__nav
+			font-size: 14px
+			margin-bottom: 25px
+			li
+				margin-left: 10px
+				margin-right: 10px
+				margin-bottom: 10px
+		&__list
+			margin-bottom: 0
+			
+		&__img
+			width: 390px
+			margin-left: auto
+			margin-right: auto
+			&s
+				display: none
+
+	.hotel-map
+		&__wrap
+			margin-left: -460px
+			
+	.plans
+		&_page
+			.plans
+				&__img
+					width: 370px
+
+	.service
+		padding: 30px
+		&__section
+			width: 100%
+			padding-left: 20px
+			padding-right: 20px
+			border-right: none
+		
+	.aside
+		width: 100%
+		margin-top: 20px
+		padding-left: 0
+	.images
+		margin-bottom: 25px
+		&__left
+			width: 100%
+			img
+				margin-left: auto
+				margin-right: auto
+			
+		&__right
+			display: none
+			
+	.page
+		&__main-title
+			margin-bottom: 15px
+		
+	.order
+		max-width: 400px
+		margin-left: auto
+		margin-right: auto
+	
+	.contacts
+		padding: 30px
+	.form
+		padding: 20px 15px
+		&__input
+			width: 100%
+			
 @media screen and (max-width: 992px)
-	.case
-		width: 750px
+	.header
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		z-index: 11
+		border-bottom: 1px solid #dddddd
+		&__logo
+			padding-top: 0
+			
+		&__mobile-btn
+			display: block
+			margin-left: auto
+			height: 26px
+			cursor: pointer
+			margin-right: 15px
+			position: absolute
+			right: 0
+			z-index: 11
+			span
+				position: relative
+				display: block
+				height: 4px
+				width: 35px
+				margin-bottom: 6px
+				background-color: #c4c4c4
+				transition: .3s
+				&:last-of-type
+					margin-bottom: 0
+			&_toggle
+				z-index: 1
+				span
+					&:nth-of-type(1)
+						top: 10px
+						transform: rotate(-45deg)
+					&:nth-of-type(2)
+						opacity: 0
 
+					&:nth-of-type(3)
+						top: -10px
+						transform: rotate(45deg)
+
+	.header
+		&_ny
+			&:after
+				display: none
+
+		&__container
+			z-index: 11
+			padding-top: 18px
+			padding-bottom: 18px
+
+		&__nav
+			display: none
+
+		&__wrap
+			position: relative
+			
+
+	.mobile-nav
+		display: block
+		z-index: 10
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(0,0,0,0.8)
+		transition: .3s
+		transform: scale(0)
+		opacity: 0
+		&_toggle
+			opacity: 1
+			transform: scale(1)
+		a
+			color: #fff
+		ul
+			width: 100%
+			margin: auto
+			position: relative
+			top: 50%
+			transform: translateY(-50%)
+			margin-top: 20px
+		li
+			font-size: 32px
+			width: 100%
+			margin-left: 0
+			margin-right: 0
+			text-align: center
+			margin-bottom: 15px
+			font-weight: 600
+			&:last-of-type
+				margin-bottom: 0
+			&:after
+				display: none
+			
+
+	.logo
+		&_ny
+			a
+				&:before
+					display: none
+
+	.main
+		padding-top: 60px
+			
+	.main-slide
+		padding-top: 25px
+		padding-bottom: 25px
+	.main-shares
+		padding-top: 0
+		&__title
+			text-align: center
+			margin-bottom: 20px
+		&__list
+			margin-bottom: 20px
+			
+	
+	.afisha
+		margin-left: -15px
+		margin-right: -15px
+
+	.main-afisha__title
+		margin-bottom: 25px
+			
+	.hotels
+		padding-bottom: 30px
+		&__link
+			margin-top: 0
+
+
+	.main-articles
+		&__list
+			margin-left: auto
+			margin-right: auto
+			max-width: 369px
+			width: 100%
+
+		&__item
+			margin-bottom: 30px
+
+		&__date
+			
+		&__link
+			margin-top: 0
+			
+			
+	.reviews
+		margin-bottom: 20px
+		&__title
+			margin-bottom: 5px
+
+		&__list
+			padding-left: 0
+			padding-right: 0
+			&:before
+				top: 20px
+			&:after
+				top: auto
+				bottom: -20px
+			.slick-arrow
+				top: -22px
+		&__item
+			padding-top: 15px
+			padding-bottom: 50px
+			&:before
+
+			
+
+		&__name
+			margin-bottom: 15px
+			
+	.footer
+		&__btn
+			width: 100%
+
+	.nav
+		&_foot
+			justify-content: flex-start
+			li
+
+			
+	.photos
+		&__item
+			width: 33.333%
+			&:nth-last-of-type(3), &:nth-last-of-type(4)
+				display: none
+			
+
+	.hotel
+		&__filter
+			&-item
+				width: 300px
+
+	.plans
+		padding-left: 15px
+		padding-right: 15px
+		&__nav
+			li
+				margin-left: 20px
+				margin-right: 20px
+		&__label
+			position: absolute
+			left: 50%
+			margin-left: -195px
+			
+
+	.services
+		padding-top: 25px
+		&__nav
+			margin-bottom: 20px
+			
+		&__item
+			margin-bottom: 30px
+			&:last-of-type
+				margin-bottom: 0
+		&__label
+			display: none
+			
+		&__img
+			img
+				margin-left: auto
+				margin-right: auto
+
+	.hotel-map
+		&__wrap
+			margin-left: -360px
+
+
+	.plans
+		&_foot
+			.plans
+				&__item
+					margin-bottom: 30px
+					&:last-of-type
+						margin-bottom: 0
+					
+				&__link
+					margin-top: 20px
+
+	.contacts
+		padding: 15px
+		&__main-title
+			text-align: center
+			margin-bottom: 5px
+		&__data
+			width: 100%
+			padding-right: 0
+		&__form
+			width: 100%
+			border: none
+			padding: 0
+			
+
+	.news-item__main-img
+		margin-bottom: 20px
+
+			
+	.form
+		padding: 0
 
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
+
+	.filter
+		margin-left: -15px
+		margin-right: -15px
+		&__subitem + &__subitem
+			margin-left: 0
+		&__item
+			height: auto
+			margin-bottom: 10px
+		&__subitem
+			width: 100%
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+
+	.afisha
+		&__item
+			margin-bottom: 20px
+			&:last-of-type
+				margin-bottom: 0
+		&__data
+			max-width: 233px
+			margin-left: auto
+			margin-right: auto
+
+	.wishes
+		padding-top: 25px
+		background-position: center -15px
+		&__input
+			width: 100%
+		&__title
+			margin-bottom: 25px
+			font-size: 22px
+		&__elements
+			width: 100%
+			max-width: 540px
+			
+		&__textarea
+			margin-bottom: 10px
+
+	.hotels
+		padding-top: 10px
+			
+	.main-title
+		font-size: 28px
+		line-height: 24px
+
+	.title, .subtitle
+		font-size: 22px
+			
+	.footer
+		padding-top: 18px
+		padding-bottom: 18px
+		&__nav
+			margin-bottom: 10px
+			text-align: center
+			.nav
+				li
+					margin: 0 0 3px
+		&__btn
+			max-width: 200px
+			
+	.nav
+		&_foot
+			li
+				width: 100%
+
+	.filter
+		margin-left: 0
+		margin-right: 0
+		.case
+			padding-left: 0
+			padding-right: 0
+		&__wrap
+			
+	.photos
+		display: none
+			
+	.page
+		&_hotel
+			padding-top: 0
+
+	.hotel
+		&__filter
+			display: none
+
+	.plans
+		&__nav
+			li
+				width: 100%
+				margin-left: 0
+				margin-right: 0
+				margin-bottom: 7px
+		&__img
+			width: 230px
+		&__label
+			margin-left: -115px
+
+		&__case
+			padding: 15px
+			
+		&__subtitle
+			margin-bottom: 15px
+
+		&__text
+			padding-right: 0
+			margin-bottom: 15px
+
+	.prices
+		padding-top: 25px
+		padding-bottom: 25px
+		&__wrap
+			width: 100%
+			padding: 15px
+		&__title
+			margin-bottom: 10px
+		&__links
+			text-align: left
+			ul
+				width: 100%
+			li
+				width: 100%
+				margin-bottom: 5px
+				&:last-of-type
+					margin-bottom: 0
+			
+			
+
+	.hotel-map
+		&__wrap
+			margin-left: 0
+			left: 15px
+			right: 15px
+			bottom: 20px
+			top: auto
+			width: auto
+			padding: 15px
+
+	.plans__item
+		padding-left: 0
+		padding-right: 0
+	.plans_page .plans__img
+		width: 230px
+			
+	.pagination
+		margin-top: 0
+		margin-bottom: 0
+
+	.service
+		padding: 15px
+		&__data
+			li
+				width: 100%
+	.order
+		max-width: none
+		margin-left: -15px
+		margin-right: -15px
+		margin-bottom: -15px
+		padding-bottom: 0
+		background-color: #f0eeee
+		padding: 30px 0 0
+		&__title
+			margin-bottom: 15px
+			
+
+	.page
+		&_sub
+			padding-top: 15px
+
+	.section
+		padding-left: 0
+		padding-right: 0
+	
+	.page__desc, .text-page__desc
+		font-size: 18px
+		margin-bottom: 15px
+	.text-page
+		&__wrap
+			padding: 20px 15px 15px
+		&__title
+			margin-bottom: 20px
+			&:after
+				display: none
+			
+			
+	.text-page__img
+		margin-bottom: 20px
+	.text-page__desc
+		padding-left: 0
+		font-size: 16px
+	.service__data
+		p
+			font-size: 16px
+			margin-bottom: 15px
+
+	.hotel
+		&__main-title
+			span
+				display: block
+			&:after
+				display: none
+		&__label
+			margin-left: 0
+			margin-top: 20px
+			margin-bottom: 20px
+		&__desc
+			font-size: 18px
+			max-width: 100%
+
+	#main-map
+		height: 250px
+			
+			
+@media screen and (max-width: 420px)
+	.filter
+		&__select
+			width: 100%
+			margin-bottom: 10px
+			&:last-of-type
+				margin-bottom: 0
+			
+	.reviews
+		&__list
+			&:before, &:after
+				display: none
+			
+		&__item
+			padding-top: 0
+			padding-bottom: 0

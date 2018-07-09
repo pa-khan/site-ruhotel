@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="template/styles/css/style.css" />
+	<link rel="stylesheet" href="template/styles/css/responsive.css" />
+	<script src="template/scripts/libs.js"></script>
+	<script src="template/scripts/common.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('main');
+		document.createElement('section');
+		document.createElement('article');
+		document.createElement('aside');
+		document.createElement('footer');
+	</script>
+	<![endif]-->
+</head>
+<body>
+<div class="mobile-nav">
+	<ul class="nav nav_line">
+		<li><a href="">О компании</a></li>
+		<li><a href="">Акции</a></li>
+		<li><a href="">Каталог</a></li>
+		<li><a href="">Контакты</a></li>
+	</ul>
+</div>
+<header class="header header_ny">
+	<div class="header__container">
+		<div class="case">
+			<div class="header__wrap row row-">
+				<div class="header__logo logo logo_ny col col-lg-3 col-md-3">
+					<a href=""><img src="upload/logos/logo-color.png" alt=""></a>
+				</div>
+				<div class="header__nav col col-lg-6 col-md-6 sm-hidden xs-hidden">
+					<ul class="nav nav_line">
+						<li><a href="">О компании</a></li>
+						<li><a href="">Акции</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header__contacts col col-lg-3 col-md-3 sm-hidden xs-hidden">
+					<div class="header__phone"><a href="tel:+55555555555" class="phone"><strong>+5 </strong>|555|<strong> 555 55 55 </strong></a></div>
+					<div class="header__callback"><a data-fancybox data-src="#popup-callback" href="javascript:;">Обратный звонок</a></div>
+				</div>
+				<div class="header__mobile-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<main class="main">
+	<div class="page page_gray page_sub">
+		<div class="case">
+			<div class="page__wrap">
+				<div class="contacts row">
+					<div class="contacts__data">
+						<div class="contacts__main-title main-title">КОНТАКТЫ</div>
+						<div class="contacts__blocks">
+							<div class="contacts__block">
+								<div class="contacts__icon"><i class="icon icon-phone"></i></div>
+								<div class="contacts__text">
+									<p><a href="tel:+74955052583" class="phone"><strong>8 </strong>|495|<strong> 505 25 83</strong></a></p>
+									<p><a href="tel:+74956652165" class="phone"><strong>8 </strong>|495|<strong> 665 21 65</strong></a></p>
+								</div>
+							</div>
+							<div class="contacts__block">
+								<div class="contacts__icon"><i class="icon icon-marker-big"></i></div>
+								<div class="contacts__text"><p>249180, Калужская область, <br>Д. Грибовка, ул. Пушкина, дом Колотушкина</p></div>
+							</div>
+							<div class="contacts__block">
+								<div class="contacts__icon"><i class="icon icon-email"></i></div>
+								<div class="contacts__text"><p><a href="mailto:E-mail@email.com">E-mail@email.com</a></p></div>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__form form">
+						<div class="form__title subtitle subtitle_mid">Напишите нам</div>
+						<div class="form__elements row between">
+							<div class="form__input input input_border input_radius input_normal"><input type="text" placeholder="Имя"></div>
+							<div class="form__input input input_border input_radius input_normal input_phone"><input type="text" placeholder="Телефон"></div>
+							<div class="form__textarea textarea textarea_border textarea_radius textarea_normal"><textarea placeholder="Ваше сообщение"></textarea></div>
+							<button class="form__btn btn btn_bg-yellow btn_normal btn_radius btn_hover-bg-green btn_hover-color-white">Бронировать</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="hotel-map">
+		<div class="hotel-map__wrap">
+			<div class="hotel-map__title">249180, Калужская область, Д. Грибовка</div>
+			<div class="hotel-map__content">
+				<p>Проезд общественным транспортом:</p>
+				<p>Электричкой с Киевского вокзала или автобусом от м. Тёплый Стан до г. Обнинск, затем автобусом, следующим по направлению на Серпухов или Кременки до остановки «Сосновый бор»</p>
+			</div>
+			<div class="hotel-map__phones">
+				<p><a href="tel:+74955052583" class="phone"><strong>8 </strong>|495|<strong> 505 25 83</strong></a></p>
+				<p><a href="tel:+74956652165" class="phone"><strong>8 </strong>|495|<strong> 665 21 65</strong></a></p>
+			</div>
+		</div>
+		<div class="hotel-map__map">
+			<div id="hotel-map"></div>
+			<script>
+				var map;
+				var iconMarker = 'upload/marker-large.png';
+	      function initMap() {
+	        map = new google.maps.Map(document.getElementById('hotel-map'), {
+	          zoom: 13,
+	          center: new google.maps.LatLng(51.3045939,20.3428488),
+	          mapTypeId: 'terrain',
+	          disableDefaultUI: true,
+	          styles: [
+						  {
+						    "featureType": "administrative",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#94ecf1"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "landscape",
+						    "stylers": [
+						      {
+						        "color": "#ffffff"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "poi",
+						    "stylers": [
+						      {
+						        "visibility": "off"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "water",
+						    "elementType": "geometry.fill",
+						    "stylers": [
+						      {
+						        "color": "#d4fafa"
+						      }
+						    ]
+						  },
+						  {
+						    "featureType": "water",
+						    "elementType": "labels.text.fill",
+						    "stylers": [
+						      {
+						        "color": "#94ecf1"
+						      }
+						    ]
+						  }
+						]
+	        });
+
+	        // Create a <script> tag and set the USGS URL as the source.
+	        var script = document.createElement('script');
+	        // This example uses a local copy of the GeoJSON stored at
+	        // http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojsonp
+	        script.src = 'template/scripts/geo.js';
+	        document.getElementsByTagName('head')[0].appendChild(script);
+	      }
+
+	      // Loop through the results array and place a marker for each
+	      // set of coordinates.
+	      window.eqfeed_callback = function(results) {
+	        for (var i = 0; i < results.features.length; i++) {
+	          var coords = results.features[i].geometry.coordinates;
+	          var latLng = new google.maps.LatLng(coords[1],coords[0]);
+	          var marker = new google.maps.Marker({
+	            position: latLng,
+	            map: map
+	          });
+	        }
+	      }
+
+
+			</script>
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfEFyS5xoi-MBgcRXgqXMSDSwCppIb7HY&callback=initMap" async defer></script>
+		</div>
+	</div>
+</main>
+
+<footer class="footer">	
+	<div class="case">
+		<div class="footer__wrap row row- i-mid">
+			<div class="footer__logo col col-lg-2 col-md-2 sm-hidden xs-hidden">
+				<a href=""><img src="upload/logos/logo-blue-gray.png" alt=""></a>
+			</div>
+			<div class="footer__nav col col-lg-7 col-md-7 col-sm-9 col-xs-12">
+				<ul class="nav nav_foot">
+					<li><a href="">О компании</a></li>
+					<li><a href="">Отэли на карте</a></li>
+					<li><a href="">Новости</a></li>
+					<li><a href="">Контакты</a></li>
+				</ul>
+			</div>
+			<div class="footer__btn-wrap col col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<a href="" class="footer__btn btn btn_border-blue-gray btn_color-blue-gray"><i class="icon icon-marker-normal-blue-gray"></i>Отэли на карте</a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="popup popup_callback" id="popup-callback">
+	<div class="popup__subtitle subtitle subtitle_mid">Обратный звонок</div>
+	<div class="popup__wrap">
+		<div class="popup__input input input_border input_normal input_center"><input placeholder="Имя" type="text"></div>
+		<div class="popup__input input input_border input_normal input_center input_phone"><input placeholder="Телефон" type="text"></div>
+		<button class="popup__btn btn btn_bg-green btn_color-white btn_small btn_radius btn_hover-bg-yellow btn_hover-color-black">Заказать звонок</button>
+	</div>
+</div>
+</body>
+</html>

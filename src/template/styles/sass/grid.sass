@@ -77,13 +77,13 @@
 			width: 100% / $gridCols * $i
 			$i: $i + 1
 
-@media screen and (min-width: 1200px)
+@media screen and (min-width: 122px)
 	.case
 		width: (1170px + 30px)
 	@include grid(12, "lg")
 
 
-@media screen and (max-width: 1199px)
+@media screen and (max-width: 1225px)
 	.case
 		width: 950px
 	@include grid(12, "md")
@@ -93,9 +93,12 @@
 	.case
 		width: 750px
 	@include grid(12, "sm")
-
+	.sm-hidden
+		display: none
 
 @media screen and (max-width: 767px)
 	.case
 		width: 100%
 	@include grid(12, "xs")
+	.xs-hidden
+		display: none

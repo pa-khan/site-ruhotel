@@ -1,6 +1,6 @@
 $(document).ready(function($) {
 
-	$('.input_phone input').mask('+7 (000) 000-00-00');
+	$('.input_phone input').mask('+7 |000| 000 00 00');
 
 	
   $('.date input').datepicker({
@@ -20,7 +20,7 @@ $(document).ready(function($) {
 
   $(".nano").nanoScroller();
 
-  $('.plans__list').each(function(index, el) {
+  $('.plans__item').each(function(index, el) {
   	var img = $(this).find('.plans__img'),
   			imgs = $(this).find('.plans__imgs');
   
@@ -41,4 +41,9 @@ $(document).ready(function($) {
   });
 
   $('.prices__wrap').tabs();
+
+  $('.header__mobile-btn').click(function(event) {
+  	$(this).toggleClass('header__mobile-btn_toggle');
+  	$('.mobile-nav').toggleClass('mobile-nav_toggle');
+  });
 });
