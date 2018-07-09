@@ -1367,6 +1367,10 @@ img {
   padding-top: 47px; }
   .main-articles__title {
     margin-bottom: 50px; }
+    .main-articles__title_page {
+      margin-bottom: 30px; }
+  .main-articles__list_page .main-articles__item {
+    margin-bottom: 40px; }
   .main-articles__item {
     display: block; }
   .main-articles__img {
